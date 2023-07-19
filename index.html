@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Belanosima&family=Libre+Baskerville:wght@400;700&family=Ysabeau+SC&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="WD76_EXERCISE1_MIRANDA.css">
+    <link rel="icon" href="img/anime/onepiece.png" type="image/x-icon">
+    <title>Hanime</title>
+</head>
+<body class="bg-dark">
+    <!-- <div class="container-fuild bg-warning text-dark p-3"> px padding for left and right, py padding for top and bottom
+        <h3>Anime List</h3>
+    </div> -->
+    <!-- NAVIGATION BAR -->
+    <!-- START OF NAV BAR -->
+    <nav class="navbar navbar-expand-lg fixed-top"> <!-- fixed-top, fixed-bottom, sticky-top, sticky-bottom  -->
+        <div class="container-fluid">
+            <!--    NAVIGATION TITLE    -->
+            <a href="" class="navbar-brand h2">
+                <!-- Anime List -->
+                <img src="img/anime/onepiece.png" alt="" width="60">
+            </a>
+            <!--    NAVIGATION BUTTON   -->
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarToggle">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!--    NAVIGATION LIST     -->
+            <div class="collapse navbar-collapse" id="navbarToggle">
+                <ul class="navbar-nav">
+                    <!--    Links   -->
+                    <li class="navbar-item ">
+                        <a href="#" class="nav-link active text-white">
+                            HOME
+                        </a>
+                    </li>
+                    <!--    Links   -->
+                    <!--    DROPDOWN TOGGLE     -->
+                    <li class="navbar-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle text-white" id="dropdownSample" data-bs-toggle="dropdown">
+                            GENRE
+                        </a>
+                        <!--    DROPDOWN MENU   -->
+                        <ul class="dropdown-menu ">
+                            <li class="col-4">
+                                <a href="" class="dropdown-item">
+                                    Action
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="dropdown-item">
+                                    Adventure
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="dropdown-item">
+                                    Comedy
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="dropdown-item">
+                                    Drama
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="dropdown-item">
+                                    Ecchi
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="dropdown-item">
+                                    Fantasy
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="dropdown-item">
+                                    Harem
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="dropdown-item">
+                                    Horror
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="dropdown-item">
+                                    Isekai
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="dropdown-item">
+                                    Magic
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="dropdown-item">
+                                    Mecha
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="dropdown-item">
+                                    Military
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="dropdown-item">
+                                    Romance
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="dropdown-item">
+                                    School
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="dropdown-item">
+                                    Sci-Fi
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="dropdown-item">
+                                    Slice of Life
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="dropdown-item">
+                                    Vampire
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!--    Links   -->
+                    <li class="navbar-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle text-white" id="dropdownSample1" data-bs-toggle="dropdown">
+                            TYPES
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="" class="dropdown-item">
+                                    TV Series
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="dropdown-item">
+                                    Movies
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="dropdown-item">
+                                    ONAs
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="dropdown-item">
+                                    OVAs
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="dropdown-item">
+                                    Specials
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="#" class="nav-link text-white">
+                            NEWEST
+                        </a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="#" class="nav-link text-white" >
+                            UPDATED
+                        </a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="#" class="nav-link text-white" >
+                            ONGOING
+                        </a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="#" class="nav-link text-white" >
+                            ADDED
+                        </a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="#" class="nav-link text-white" >
+                            REQUEST
+                        </a>
+                    </li>
+                </ul>
+                <!-- SEARCH BAR -->
+                <div class="input-group w-25 mx-15" style="margin-left: auto; margin-right: auto;">
+                    <input type="text" class="form-control" name="Search"/>
+                    <button class="btn btn-dark">
+                      <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </div>
+                <!-- LOGIN|SIGN IN -->
+                <div class="login-signin">
+                    <ul style="margin-left: auto; margin-right: auto;">
+                        <button type="submit" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#loginmodal">Login</button>
+                        <button type="submit" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#signinmodal">Sign in</button>
+                    </ul>
+                </div>
+                
+            </div>
+        </div>
+    </nav>
+    <!-- BACKGROUND -->
+    
+    <!-- CAROUSEL -->
+    <div id="carouselSample" class="carousel slide" data-bs-ride="carousel">
+        <!-- CAROUSEL INDICATOR -->
+        <!-- in programming always count starting from 0 -->
+        <!-- data-bs-slide-to refers to the imagethat it will redirect -->
+        <!-- class active will be put in the active slide -->
+        <div class="carousel-indicators">
+            <button data-bs-target="#carouselSample" data-bs-slide-to="0" class="active">
+
+            </button>
+            <button data-bs-target="#carouselSample" data-bs-slide-to="1">
+
+            </button>
+            <button data-bs-target="#carouselSample" data-bs-slide-to="2">
+
+            </button>
+            <button data-bs-target="#carouselSample" data-bs-slide-to="3">
+
+            </button>
+            <button data-bs-target="#carouselSample" data-bs-slide-to="4">
+
+            </button>
+        </div>
+
+        <!-- CAROUSEL BODY -->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img/anime/onepiece.jpg" class="d-block w-100" alt="">
+                <div class="carousel-caption d-block d-none d-md-block">
+                    <h2>ONE PIECE</h2>
+                    <a class="btn btn-info text-dark" type="button" data-bs-toggle="modal" data-bs-target="#sampleModal1">VIEW</a>
+                    <a class="btn btn-info text-dark" type="button" href="https://9anime.to/watch/one-piece.ov8/ep-1">WATCH NOW</a>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/anime/jjks2.jpg" class="d-block w-100" alt="">
+                <div class="carousel-caption d-block d-none d-md-block">
+                    <h2>JUJUTSU KAISEN SEASON 2</h2>
+                    <a class="btn btn-info text-dark" type="button" data-bs-toggle="modal" data-bs-target="#sampleModal2">VIEW</a>
+                    <a class="btn btn-info text-dark" type="button" href="https://9anime.to/watch/jujutsu-kaisen-2nd-season.ll3x3/ep-1">WATCH NOW</a>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/anime/Mushoku-S2.jpg" class="d-block w-100" alt="">
+                <div class="carousel-caption d-block d-none d-md-block">
+                    <h2>MUSHOKU TENSEI: JOBLESS REINCARNATION SEASON 2</h2>
+                    <a class="btn btn-info text-dark" type="button" data-bs-toggle="modal" data-bs-target="#backgroundModal1">VIEW</a>
+                    <a class="btn btn-info text-dark" type="button" href="https://9anime.to/watch/mushoku-tensei-ii-isekai-ittara-honki-dasu-part-2.prwzx/ep-1">WATCH NOW</a>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/anime/Hellsparadise.jpg" class="d-block w-100" alt="">
+                <div class="carousel-caption d-block d-none d-md-block">
+                    <h2>HELL'S PARADISE</h2>
+                    <a class="btn btn-info text-dark" type="button" data-bs-toggle="modal" data-bs-target="#backgroundModal2">VIEW</a>
+                    <a class="btn btn-info text-dark" type="button" href="https://9anime.to/watch/jigokuraku.kqk9/ep-1">WATCH NOW</a>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/anime/bleach.jpg" class="d-block w-100" alt="">
+                <div class="carousel-caption d-block d-none d-md-block">
+                    <h2>BLEACH: THOUSASND YEAR BLOOD WAR</h2>
+                    <a class="btn btn-info text-dark" type="button" data-bs-toggle="modal" data-bs-target="#backgroundModal3">VIEW</a>
+                    <a class="btn btn-info text-dark" type="button" href="https://9anime.to/watch/bleach-sennen-kessen-hen.w190l/ep-1">WATCH NOW</a>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselSample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselSample" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+
+                        <!--    CAROUSEL   -->
+    <div class="container my-5"> <!-- mx padding for left and right, my padding for top and bottom  -->
+        <h1 class="text-warning">Popular Animes</h1>
+        <br/>
+        <div class="row g-3"> <!-- row tag -->
+            <!-- Start of col -->
+            <div class="col-md-2">
+                <div class="card">
+                    <img src="img/anime/onepiecee.jpg" class="card-img-top" alt="" >
+                    <div class="card-body">
+                        <h5 class="card-title">One Piece</h5>
+                        <a class="btn btn-info" type="button" data-bs-toggle="modal" data-bs-target="#sampleModal1">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <!-- End of col-->
+            <!-- Start of col -->
+            <div class="col-md-2">
+                <div class="card">
+                    <img src="img/anime/jjk_visual.jpg" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Jujutsu Kaisen Season 2</h5>
+                        <a class="btn btn-info" type="button" data-bs-toggle="modal" data-bs-target="#sampleModal2">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <!-- End of col-->
+            <!-- Start of col -->
+            <div class="col-md-2">
+                <div class="card">
+                    <img src="img/anime/demonslayer.jpg" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Demon Slayer: The Swordsmith Village Arc</h5>
+                        <a class="btn btn-info" type="button" data-bs-toggle="modal" data-bs-target="#sampleModal3">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <!-- End of col-->
+            <!-- Start of col -->
+            <div class="col-md-2">
+                <div class="card">
+                    <img src="img/anime/blackclover.jpg" class="card-img-top" alt="" >
+                    <div class="card-body">
+                        <h5 class="card-title">Black Clover</h5>
+                        <a class="btn btn-info" type="button" data-bs-toggle="modal" data-bs-target="#sampleModal2">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <!-- End of col-->
+            <!-- Start of col -->
+            <div class="col-md-2">
+                <div class="card">
+                    <img src="img/anime/bleach1.jpg" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Bleach: Thousand Year Blood War</h5>
+                        <a class="btn btn-info" type="button" data-bs-toggle="modal" data-bs-target="#sampleModal2">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <!-- End of col-->
+            <!-- Start of col -->
+            <div class="col-md-2">
+                <div class="card">
+                    <img src="img/anime/narutomag.jpg" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Naruto</h5>
+                        <a class="btn btn-info"  type="button" data-bs-toggle="modal" data-bs-target="#sampleModal2">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <!-- End of col-->
+            <!-- Start of col -->
+            <div class="col-md-2">
+                <div class="card">
+                    <img src="img/anime/hellsparadise1.jpg" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Hell's Paradise</h5>
+                        <a class="btn btn-info" type="button" data-bs-toggle="modal" data-bs-target="#sampleModal2">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <!-- End of col-->
+            <!-- Start of col -->
+            <div class="col-md-2">
+                <div class="card">
+                    <img src="img/anime/one-punch-man.jpg" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">One Punch Man</h5>
+                        <a class="btn btn-info" type="button" data-bs-toggle="modal" data-bs-target="#sampleModal2">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <!-- End of col-->
+            <!-- Start of col -->
+            <div class="col-md-2">
+                <div class="card">
+                    <img src="img/anime/joblessreincarnation.jpg" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Mushoku Tensei II: Isekai Ittara Honki Dasu</h5>
+                        <a class="btn btn-info" type="button" data-bs-toggle="modal" data-bs-target="#sampleModal2">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <!-- End of col-->
+            <!-- Start of col -->
+            <div class="col-md-2">
+                <div class="card">
+                    <img src="img/anime/spy-x-family-part-2-dub.jpg" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Spy X Family</h5>
+                        <a class="btn btn-info" type="button" data-bs-toggle="modal" data-bs-target="#sampleModal2">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <!-- End of col-->
+            <!-- Start of col -->
+            <div class="col-md-2">
+                <div class="card">
+                    <img src="img/anime/vinlandsaga.jpg" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Vinland Saga</h5>
+                        <a class="btn btn-info" type="button" data-bs-toggle="modal" data-bs-target="#sampleModal2">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <!-- End of col-->
+            <!-- Start of col -->
+            <div class="col-md-2">
+                <div class="card">
+                    <img src="img/anime/tokyorevenger.jpg" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Tokyo Revengers</h5>
+                            <a class="btn btn-info"  type="button" data-bs-toggle="modal" data-bs-target="#sampleModal2">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <!-- End of col-->
+        </div>
+    </div>
+    <!--    End of the Container    -->
+    <footer>
+        <div class="footer_main">
+
+            <div class="footer_logo">
+                <img src="img/anime/onepiece.png">
+            </div>
+            <div>
+                <ul class="socials">
+                    <p>Contact Us:</p>
+                    <p><li><a href="https://www.facebook.com/Aleruzregtm1"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href="https://www.instagram.com/jl_aru/"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="https://www.youtube.com"><i class="fa-brands fa-youtube"></i></a></li>
+                    <li><a href="https://discord.com/channels/@me"><i class="fa-brands fa-discord"></i></a></li>
+                    <li><a href="https://twitter.com/i/flow/login?redirect_after_login=%2F"><i class="fa-brands fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa-solid fa-envelope"></i></a></li></p>
+                </ul>
+            </div>
+
+            <div class="footer_bottom">
+                
+                <p><i class="fa-regular fa-copyright"></i>
+                    Copyright 2023
+                </p>
+            </div>
+        </div>
+    </footer>
+    <!-- MODALS -->
+    <!-- LOGIN SIGN IN MODAL -->
+    <div class="modal" id="loginmodal">
+        <div class="modal-dialog modal-xl"> 
+            <div class="modal-content">
+                <!-- MODAL HEADER -->
+                <div class="modal-header">
+                    <h5 class="modal-title">LOGIN</h5>
+                </div>
+
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                          <label for="email">Email address</label>
+                          <input type="email" class="form-control" id="email" placeholder="mirandajohnlesther@gmail.com">
+                        </div>
+                        <div class="form-group">
+                          <label for="password">Password</label>
+                          <input type="password" class="form-control" id="password" placeholder="**********">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Login</button>
+                      </form>
+                </div>
+
+                <!-- MODAL FOOTER -->
+                <div class="modal-footer">
+                    <button class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- SIGNIN MODAL -->
+    <div class="modal" id="signinmodal">
+        <div class="modal-dialog modal-xl"> 
+            <div class="modal-content">
+                <!-- MODAL HEADER -->
+                <div class="modal-header">
+                    <h5 class="modal-title">SIGN IN</h5>
+                </div>
+
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                          <label for="name">Name</label>
+                          <input type="text" class="form-control" id="name" placeholder="John Lesther A. Miranda">
+                        </div>
+                        <div class="form-group">
+                          <label for="email">Email address</label>
+                          <input type="email" class="form-control" id="email1" placeholder="mirandajohnlesther@gmail.com">
+                        </div>
+                        <div class="form-group">
+                          <label for="password">Password</label>
+                          <input type="password" class="form-control" id="password1" placeholder="**********">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Sign-in</button>
+                      </form>
+                </div>
+
+                <!-- MODAL FOOTER -->
+                <div class="modal-footer">
+                    <button class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- BACKGROUND MODALS -->
+    <div class="modal" id="backgroundModal1">
+        <div class="modal-dialog modal-xl"> 
+            <div class="modal-content">
+                <!-- MODAL HEADER -->
+                <div class="modal-header">
+                    <h5 class="modal-title">MUSHOKU TENSEI: JOBLESS REINCARNATION SEASON 2</h5>
+                </div>
+
+                <div class="modal-body">
+                    <img src="img/anime/reudus.jpg" class="img-fluid" alt="">
+                    <h1 class="text-center">MUSHOKU TENSEI: JOBLESS REINCARNATION SEASON 2</h1>
+                    <p class="text-start"><span class="text-success">Premiered: </span>Summer 2023</p>
+                    <p class="text-start"><span class="text-success">Date Aired: </span>Jul 09, 2023 to Sep 24, 2023</p>
+                    <p class="text-start"><span class="text-success">Genre: </span>Drama , Ecchi , Fantasy , Isekai , Reincarnation</p> 
+                    <p class="text-start">
+                        <span class="text-success">PLOT SUMMARY: </span>Second season of Mushoku Tensei: Isekai Ittara Honki Dasu.
+                    </p>
+                </div>
+
+                <!-- MODAL FOOTER -->
+                <div class="modal-footer">
+                    <button class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 4th bgmodal -->
+    <div class="modal" id="backgroundModal2">
+        <div class="modal-dialog modal-xl"> 
+            <div class="modal-content">
+                <!-- MODAL HEADER -->
+                <div class="modal-header">
+                    <h5 class="modal-title">HELL'S PARADISE</h5>
+                </div>
+
+                <div class="modal-body">
+                    <img src="img/anime/hellsparadisebg1.jpg" class="img-fluid" alt="">
+                    <h1 class="text-center">HELLS PARADISE</h1>
+                    <p class="text-start"><span class="text-success">Premiered: </span>Spring 2023</p>
+                    <p class="text-start"><span class="text-success">Date Aired: </span>Apr 01, 2023 to Jul 01, 2023</p>
+                    <p class="text-start"><span class="text-success">Genre: </span>Action, Adventure, Fantasy, Martial Arts, Mystery, Shounen, Super Power, Supernatural</p> 
+                    <p class="text-start">
+                        <span class="text-success">PLOT SUMMARY: </span>Gabimaru the Hollow, a ninja from Iwagakure Village recognized for his unemotional demeanor and devoid of any warmth, finds himself on death row after being plotted against by his fellow comrades. He has grown exhausted of living a life of killing and treachery and desires nothing more than to depart from this world. Nevertheless, despite his seemingly impassive facade, Gabimaru secretly harbors a reason to exist – his beloved wife, the very person who caused him to soften and become ineffective in his line of work. With the hope of reuniting with her, Gabimaru refuses to succumb to death, frustrating all attempts of execution.
+                        Asaemon the Decapitator, a renowned executioner, comes across Gabimaru's plight and devises an offer. She agrees to secure a full pardon from the Shogunate for Gabimaru in exchange for his participation in an expedition to a southern Japanese island, where they seek the elixir of life that is rumored to be found there. However, this island is no ordinary land; it is believed to be Paradise.
+                        Nonetheless, the expedition team, consisting of members who are all marked for death, discovers that this island is shrouded in mystery, and they may not be entirely equipped to handle what they encounter during their expedition.
+                    </p>
+                </div>
+
+                <!-- MODAL FOOTER -->
+                <div class="modal-footer">
+                    <button class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 5th bgmodal -->
+    <div class="modal" id="backgroundModal3">
+        <div class="modal-dialog modal-xl"> 
+            <div class="modal-content">
+                <!-- MODAL HEADER -->
+                <div class="modal-header">
+                    <h5 class="modal-title">BLEACH: THOUSASND YEAR BLOOD WAR</h5>
+                </div>
+
+                <div class="modal-body text-center">
+                    <img src="img/anime/bleachTYBW.jpg" class="img-fluid" alt="">
+                    <h1 class="text-center">BLEACH: THOUSASND YEAR BLOOD WAR</h1>
+                    <p class="text-start"><span class="text-success">Premiered: </span>Fall 2022</p>
+                    <p class="text-start"><span class="text-success">Date Aired: </span>Oct 11, 2022 to Dec 27, 2022</p>
+                    <p class="text-start"><span class="text-success">Genre: </span>Action, Adventure, Fantasy, Shounen, Super Power, Supernatural</p> 
+                    <p class="text-start">
+                        <span class="text-success">PLOT SUMMARY: </span>Did chance or fate play a hand in Ichigo Kurosaki receiving the powers of a Soul Reaper? Despite being a Substitute Soul Reaper, he braved the tumultuous Soul Society alongside his comrades and emerged tougher for it.
+                        When his hometown of Karakura is threatened by fresh foes and allies, Ichigo arms himself with his reliable Zanpakuto. The Soul Society is perplexed by the colossal number of Hollows defeated in the World of the Living and missing residents from Rukon District. Eventually, the enigmatic Wandenreich launches an assault on the Seireitei, the Soul Reapers' base, under the instruction of Yhwach, the forefather of all Quincies, prophesying their destruction.
+                        After a millennium of secrecy, the actuality and unheard-of history of the Soul Reapers are revealed at last.
+                        Yet, as all sagas must conclude, Ichigo Kurosaki now faces his ultimate battle!
+                    </p>
+                    <a class="btn btn-info text-dark" type="button" href="https://9anime.to/watch/bleach-sennen-kessen-hen.w190l/ep-1">WATCH NOW</a>
+                </div>
+
+                <!-- MODAL FOOTER -->
+                <div class="modal-footer">
+                    <button class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 1st Modal -->
+    <div class="modal" id="sampleModal1">
+        <div class="modal-dialog modal-xl"> <!-- modal sizes: modal-xl, modal-fullscreen, modal-lg, modal sm-->
+            <div class="modal-content">
+                <!-- MODAL HEADER -->
+                <div class="modal-header">
+                    <h5 class="modal-title">One Piece</h5>
+                </div>
+
+                <div class="modal-body text-center">
+                    <img src="img/anime/onepiece12.jpg" class="img-fluid" alt="">
+                    <h1 class="text-center">One Piece</h1>
+                    <p class="text-start"><span class="text-success">Premiered: </span>Fall 1999</p>
+                    <p class="text-start"><span class="text-success">Date Aired: </span>Oct, 1999 to ?</p>
+                    <p class="text-start"><span class="text-success">Type: </span>Action , Adventure , Comedy , Drama , Fantasy , Shounen , Super Power</p> 
+                    <p class="text-start">
+                        <span class="text-success">PLOT SUMMARY: </span>The Pirate King, Gol D. Roger, struck fear into the hearts of all who sailed the Grand Line with his unmatched strength and notorious reputation. However, his downfall at the hands of the World Government instigated a momentous shift in the world. Roger's final words divulged the existence of One Piece, the ultimate treasure that promised boundless riches, fame, and the coveted title of Pirate King, setting off the start of the Grand Age of Pirates.
+                    </p>
+                    <a class="btn btn-info text-dark" type="button" href="https://9anime.to/watch/one-piece.ov8/ep-1">WATCH NOW</a>
+                </div>
+
+                <!-- MODAL FOOTER -->
+                <div class="modal-footer">
+                    <button class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                    <!-- data-bs-dismiss for removing the modal -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 2nd Modal -->
+    <div class="modal" id="sampleModal2">
+        <div class="modal-dialog modal-xl"> <!-- modal sizes: modal-xl, modal-fullscreen, modal-lg, modal sm-->
+            <div class="modal-content">
+                <!-- MODAL HEADER -->
+                <div class="modal-header">
+                    <h5 class="modal-title">Jujutsu Kaisen 2nd Season</h5>
+                </div>
+
+                <div class="modal-body text-center">
+                    <img src="img/anime/jjk2.jpg" class="img-fluid" alt="">
+                    <h1 class="text-center">Jujutsu Kaisen 2nd Season</h1>
+                    <p class="text-start"><span class="text-success">Premiered: </span>Summer 2023</p>
+                    <p class="text-start"><span class="text-success">Date Aired: </span>July 05, 2023 to ?</p>
+                    <p class="text-start"><span class="text-success">Type: </span>Action, Drama, Fantasy, School, Shounen, Super Power, Supernatural, Demons</p> 
+                    <p class="text-start">
+                        <span class="text-success">PLOT SUMMARY: </span>The second season of Jujutsu Kaisen.
+                    </p>
+                    <a class="btn btn-info text-dark" type="button" href="https://9anime.to/watch/jujutsu-kaisen-2nd-season.ll3x3/ep-1">WATCH NOW</a>
+                </div>
+                <!-- MODAL FOOTER -->
+                <div class="modal-footer">
+                    <button class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                    <!-- data-bs-dismiss for removing the modal -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 3rd Modal -->
+    <div class="modal" id="sampleModal3">
+        <div class="modal-dialog modal-xl"> <!-- modal sizes: modal-xl, modal-fullscreen, modal-lg, modal sm-->
+            <div class="modal-content">
+                <!-- MODAL HEADER -->
+                <div class="modal-header">
+                    <h5 class="modal-title">Demon Slayer: The Swordsmith Village Arc</h5>
+                </div>
+
+                <div class="modal-body text-center">
+                    <img src="img/anime/demonwallpaper.jpg" class="img-fluid" alt="">
+                    <h1 class="text-center">Demon Slayer: The Swordsmith Village Arc</h1>
+                    <p class="text-start"><span class="text-success">Premiered: </span>Spring 2023</p>
+                    <p class="text-start"><span class="text-success">Date Aired: </span>Apr 09, 2023 to Jun 18, 2023</p>
+                    <p class="text-start"><span class="text-success">Type: </span>Action , Adventure , Comedy , Drama , Fantasy , Shounen , Super Power</p> 
+                    <p class="text-start">
+                        <span class="text-success">PLOT SUMMARY: </span>The Swordsmith Village Arc has undergone adaptation, featuring a debut episode stretching up to around 49 minutes. Furthermore, the showcasing of the episode took place in advance across theaters worldwide, as a one-of-a-kind screening experience coinciding with the final two episodes of Kimetsu no Yaiba: Yuukaku-hen.
+                    </p>
+                    <a class="btn btn-info text-dark" type="button" href="https://9anime.to/watch/demon-slayer-kimetsu-no-yaiba-swordsmith-village-arc.3r7p6/ep-1">WATCH NOW</a>
+                </div>
+                <!-- MODAL FOOTER -->
+                <div class="modal-footer">
+                    <button class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                    <!-- data-bs-dismiss for removing the modal -->
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</body>
+</html>

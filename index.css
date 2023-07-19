@@ -1,0 +1,92 @@
+body{
+    font-family: 'Belanosima', sans-serif;
+}
+nav{
+    background: #111;
+}
+nav li a:hover{
+    color: grey;
+    box-shadow: 0 0 20px #fff;
+    transition: color .4s ease;
+}
+.navbar-toggler-icon{
+    color: white;
+}
+.navbar-item{
+    font-size: 18px;
+}
+.login-signin ul{
+    margin-top: 18px;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  width: 70px; /* Adjust the width as needed */
+  height: 70px; /* Adjust the height as needed */
+}
+.col-md-2 h5{
+    font-size: 18px;
+}
+.card{
+   height: 100%;
+   padding-bottom: 40px;
+}
+.card img{
+    height: 250px;
+}
+.card-body a{
+    position: absolute;
+    bottom: 10px;
+}
+.carousel-item h2{
+    text-shadow: 0 0 10px #111, 0 0 10px #0f1923;
+}
+footer{
+    color: #fff;
+    width: 100%;
+    height: 380px;
+    background: #111;
+    font-family: 'Belanosima', sans-serif;
+    padding-top: 40px;
+
+}
+footer .footer_main{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    text-align: center;
+}
+footer .footer_main .footer_logo img{
+    width: 150px;
+}
+footer .footer_main .footer_logo img:hover{
+    cursor: pointer;
+}
+footer .socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
+footer .socials li{
+    margin: 0 10px;
+}
+.socials p{
+    font-size: 19px;
+}
+.socials a{
+    text-decoration: none;
+    color: #fff;
+}
+.socials a i{
+    font-size: 24px;
+    transition: color .4s ease;
+}
+.socials a:hover i{
+    color: grey;
+}
+.footer_bottom{
+    font-family: 'Belanosima', sans-serif;
+    text-transform: uppercase;
+}
